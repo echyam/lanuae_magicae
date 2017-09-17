@@ -20,10 +20,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 947
-  m_MinSize: {x: 683, y: 492}
+  m_MinSize: {x: 681, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 5410
+  controlID: 3105
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -120,10 +120,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 947
-  m_MinSize: {x: 406, y: 492}
+  m_MinSize: {x: 404, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 5411
+  controlID: 3106
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 614
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 5412
+  controlID: 3107
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -166,8 +166,8 @@ MonoBehaviour:
     y: 0
     width: 402
     height: 614
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 6}
   m_Panes:
   - {fileID: 6}
@@ -201,15 +201,9 @@ MonoBehaviour:
     height: 593
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD:Teleporting Platformer/Library/CurrentMaximizeLayout.dwlt
-    m_SelectedIDs: 68260000
-    m_LastClickedID: 9832
-    m_ExpandedIDs: 18fcffff00000000
-=======
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: e8fbffff00000000
->>>>>>> 7eda97d6f5613ae3b78e2953cf17b8651f3f3139:Teleporting Platformer/Library/CurrentLayout.dwlt
+    m_SelectedIDs: ac260000
+    m_LastClickedID: 9900
+    m_ExpandedIDs: e4fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -292,9 +286,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.98536444, y: 0, z: 0}
+    m_Target: {x: 0, y: 0, z: 0}
     speed: 2
-    m_Value: {x: 0.98536444, y: 0, z: 0}
+    m_Value: {x: 0, y: 0, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -321,9 +315,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 12.722971
+    m_Target: 10
     speed: 2
-    m_Value: 12.722971
+    m_Value: 10
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -466,30 +460,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets
+    - Assets/Scripts
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets
+  - Assets/Scripts
   m_LastFoldersGridSize: 96
-<<<<<<< HEAD:Teleporting Platformer/Library/CurrentMaximizeLayout.dwlt
   m_LastProjectPath: D:\School\Senior\Game Dev\2D Platformer\lanuae_magicae\Teleporting
     Platformer
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 5a260000
-    m_LastClickedID: 9818
-    m_ExpandedIDs: 000000004a26000000ca9a3bffffff7f
-=======
-  m_LastProjectPath: C:\Users\Lizzy\Desktop\lanuae_magicae\Teleporting Platformer
-  m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 92260000
-    m_LastClickedID: 9874
-    m_ExpandedIDs: 000000009226000000ca9a3bffffff7f
->>>>>>> 7eda97d6f5613ae3b78e2953cf17b8651f3f3139:Teleporting Platformer/Library/CurrentLayout.dwlt
+    m_SelectedIDs: 9a260000
+    m_LastClickedID: 9882
+    m_ExpandedIDs: 000000008e26000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -517,11 +501,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD:Teleporting Platformer/Library/CurrentMaximizeLayout.dwlt
-    m_ExpandedIDs: 000000004a26000000ca9a3bffffff7f
-=======
-    m_ExpandedIDs: 0000000092260000
->>>>>>> 7eda97d6f5613ae3b78e2953cf17b8651f3f3139:Teleporting Platformer/Library/CurrentLayout.dwlt
+    m_ExpandedIDs: 000000008e26000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -546,8 +526,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 68260000
-    m_LastClickedInstanceID: 9832
+    m_SelectedInstanceIDs: ac260000
+    m_LastClickedInstanceID: 9900
     m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: 14200000d2270000a01f0000200c0000240c000004150000361600004e0700003210000072060000c0050000ca0d00003c0a0000e2040000f61c0000c81c000000000000
     m_RenameOverlay:
