@@ -422,12 +422,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d73b1e94853ccb84fba36ade759bf46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 5
-  jumpHeight: 8
-  airAccel: 17
+  walkSpeed: 3.45
+  jumpHeight: 5.5
+  airAccel: 9
+  airSpeedLimit: 6.5
   slideSpeed: -2
-  wallJumpHeight: 10
-  wallJumpAngle: 30
+  wallJumpHeight: 9
+  wallJumpAngle: 0.25
 --- !u!1 &956827762
 GameObject:
   m_ObjectHideFlags: 0
@@ -705,7 +706,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1693766977}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 0, y: 2.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
