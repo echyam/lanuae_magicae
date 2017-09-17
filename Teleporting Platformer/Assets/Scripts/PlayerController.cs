@@ -18,10 +18,8 @@ public class PlayerController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		isGrounded = false;
-		Vector2 origin = new Vector2 (0.0f, 0.0f);
-		Vector2 direction = new Vector2 (0.0f, -1.0f);
-		RaycastHit2D groundedCheck = Physics2D.Raycast (origin,direction,0.52f);
-		if(groundedCheck!=null){
+		RaycastHit2D groundedCheck = Physics2D.Raycast (transform.position,transform.up*-1.0f,0.53f);
+		if(groundedCheck.collider!=null/*&&groundedCheck.collider.tag!="Player"*/){
 			isGrounded=true;
 		}
 		Debug.Log ("Grounded" + isGrounded);
