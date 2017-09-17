@@ -201,9 +201,15 @@ MonoBehaviour:
     height: 593
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
+<<<<<<< HEAD:Teleporting Platformer/Library/CurrentMaximizeLayout.dwlt
     m_SelectedIDs: 68260000
     m_LastClickedID: 9832
     m_ExpandedIDs: 18fcffff00000000
+=======
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: e8fbffff00000000
+>>>>>>> 7eda97d6f5613ae3b78e2953cf17b8651f3f3139:Teleporting Platformer/Library/CurrentLayout.dwlt
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -460,12 +466,13 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Sprites
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 96
   m_LastFolders:
-  - Assets/Sprites
+  - Assets
   m_LastFoldersGridSize: 96
+<<<<<<< HEAD:Teleporting Platformer/Library/CurrentMaximizeLayout.dwlt
   m_LastProjectPath: D:\School\Senior\Game Dev\2D Platformer\lanuae_magicae\Teleporting
     Platformer
   m_IsLocked: 0
@@ -474,6 +481,15 @@ MonoBehaviour:
     m_SelectedIDs: 5a260000
     m_LastClickedID: 9818
     m_ExpandedIDs: 000000004a26000000ca9a3bffffff7f
+=======
+  m_LastProjectPath: C:\Users\Lizzy\Desktop\lanuae_magicae\Teleporting Platformer
+  m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 92260000
+    m_LastClickedID: 9874
+    m_ExpandedIDs: 000000009226000000ca9a3bffffff7f
+>>>>>>> 7eda97d6f5613ae3b78e2953cf17b8651f3f3139:Teleporting Platformer/Library/CurrentLayout.dwlt
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -501,7 +517,11 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
+<<<<<<< HEAD:Teleporting Platformer/Library/CurrentMaximizeLayout.dwlt
     m_ExpandedIDs: 000000004a26000000ca9a3bffffff7f
+=======
+    m_ExpandedIDs: 0000000092260000
+>>>>>>> 7eda97d6f5613ae3b78e2953cf17b8651f3f3139:Teleporting Platformer/Library/CurrentLayout.dwlt
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
