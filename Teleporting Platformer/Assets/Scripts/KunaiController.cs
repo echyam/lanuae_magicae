@@ -15,7 +15,6 @@ public class KunaiController : MonoBehaviour {
 	}
 
 	private void OnTriggerEnter2D(Collider2D other){
-		Debug.Log ("Method Called!");
 		if (other.gameObject.tag != "Player") {
 			speed = 0.0f;
 		}
