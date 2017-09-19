@@ -425,11 +425,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   walkSpeed: 3.45
   jumpHeight: 5.5
-  airAccel: 9
-  airSpeedLimit: 6.5
+  airAccel: 10
+  airSpeedLimit: 5
   slideSpeed: -2
   wallJumpHeight: 7
-  wallJumpAngle: 0.35
+  wallJumpAngle: 0.15
 --- !u!1 &956827762
 GameObject:
   m_ObjectHideFlags: 0
