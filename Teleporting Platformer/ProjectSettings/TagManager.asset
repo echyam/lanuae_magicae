@@ -3,7 +3,11 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - bounce_back
+  - bounce_light
+  - bounce_fast
+  - bounce_slow
   layers:
   - Default
   - TransparentFX

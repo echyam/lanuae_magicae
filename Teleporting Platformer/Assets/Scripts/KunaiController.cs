@@ -36,13 +36,21 @@ public class KunaiController : MonoBehaviour {
 			kunaiRB.rotation = 180 - kunaiRB.rotation;
 
 			// bounce horizontally
-			if (other.transform.position.x - transform.position.x <= 0.05) {
-				kunaiRB.velocity = new Vector2(kunaiRB.velocity.x * -1, kunaiRB.velocity.y);
-			}
-			// bounce vertically
-			else {
+			if (other.transform.position.x - transform.position.x <= other.transform.localScale.x/2) {
 				kunaiRB.velocity = new Vector2(kunaiRB.velocity.x, kunaiRB.velocity.y * -1);
 			}
+			// bounce vertically
+			else if (other.transform.position.y - transform.position.y <= other.transform.localScale.y/2) {
+				kunaiRB.velocity = new Vector2(kunaiRB.velocity.x * -1, kunaiRB.velocity.y);
+			}
+		
+		// if kunai should bounce back faster
+		} else if (other.gameObject.tag == "bounce_fast") {
+			kunaiRB.velocity = new Vector2 (kunaiRB.velocity.x * 2, kunaiRB.velocity.y * 2);
+		
+		// if kunai should bounce back slower
+		} else if (other.gameObject.tag == "bounce_slow") {
+			kunaiRB.velocity = new Vector2 (kunaiRB.velocity.x * 0.5f, kunaiRB.velocity.y * 0.5f);
 		}
 	}
 }
