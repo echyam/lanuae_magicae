@@ -8,6 +8,7 @@ TagManager:
   - bounce_light
   - bounce_fast
   - bounce_slow
+  - kunai
   layers:
   - Default
   - TransparentFX
