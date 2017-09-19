@@ -19,10 +19,10 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4135675090719878}
-  - component: {fileID: 114471026219474768}
+  - component: {fileID: 212922053461860620}
   - component: {fileID: 50621677859530344}
   - component: {fileID: 61151604777976302}
-  - component: {fileID: 212922053461860620}
+  - component: {fileID: 114471026219474768}
   m_Layer: 0
   m_Name: switcheroo
   m_TagString: Untagged
@@ -37,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1332221822099504}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.309, y: 5.625, z: 0}
-  m_LocalScale: {x: 7.8373322, y: 0.68921185, z: 1}
+  m_LocalPosition: {x: 4.5, y: 5.5, z: 0}
+  m_LocalScale: {x: 10, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -104,7 +104,6 @@ MonoBehaviour:
   - {fileID: 1762834688967756, guid: 55b82dfa6c8dd0f4fa4ffa4adfb874e5, type: 2}
   - {fileID: 1081741194746268, guid: 2f3a167927f43f6478ec95363997465d, type: 2}
   - {fileID: 1896054994053414, guid: 389e5818ffeba1747a7a3c6dcb979eaa, type: 2}
-  label: bouce_back
 --- !u!212 &212922053461860620
 SpriteRenderer:
   m_ObjectHideFlags: 1

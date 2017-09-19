@@ -20,9 +20,9 @@ GameObject:
   m_Component:
   - component: {fileID: 4562076433472434}
   - component: {fileID: 212960953949984192}
+  - component: {fileID: 50994624992335144}
   - component: {fileID: 61293745744006230}
   - component: {fileID: 114653802744764632}
-  - component: {fileID: 50994624992335144}
   m_Layer: 0
   m_Name: KunaiPrefab
   m_TagString: kunai
