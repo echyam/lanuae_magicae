@@ -77,6 +77,8 @@ MonoBehaviour:
   - {fileID: 1704300783188130, guid: 00c20d0803782aa4d8ae6b06e12705d7, type: 2}
   - {fileID: 1762834688967756, guid: 55b82dfa6c8dd0f4fa4ffa4adfb874e5, type: 2}
   - {fileID: 1081741194746268, guid: 2f3a167927f43f6478ec95363997465d, type: 2}
+  bladeLength: 5
+  omega: 15
 --- !u!212 &212954386978504000
 SpriteRenderer:
   m_ObjectHideFlags: 1
