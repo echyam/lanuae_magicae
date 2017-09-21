@@ -14,19 +14,21 @@ public class CameraController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		// follow the player
 		transform.position = player.transform.position;
 	}
 	
 	// Update is called once per frame
 	void LateUpdate () {
 		Vector3 playerPos = player.transform.position;
-		float x = Mathf.Max(playerPos.x,minX);
-		x = Mathf.Min (x, maxX);
+		// enforce camera x,y within minimum bounds
+		float x = Mathf.Max(playerPos.x, minX);
 		float y = Mathf.Max(playerPos.y, minY);
+		// enforce camera x,y within maximum bounds
+		x = Mathf.Min (x, maxX);
 		y = Mathf.Min (y, maxY);
+
 		transform.position = new Vector3 (x, y, playerPos.z);
-		print ("(" + x + "," + y + "," + playerPos.z + ")");
-		// print ("(" + this.transform.position.x + "," + this.transform.position.y + "," + this.transform.position.z + ")");
-		//transform.position = player.transform.position;
+		print ("(" + x + "," + y + "," + playerPos.z + ")");	// track updated camera coordinates
 	}
 }

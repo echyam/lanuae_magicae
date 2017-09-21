@@ -17,20 +17,24 @@ public class Walls : MonoBehaviour {
 		if (prevCollision1 && prevCollision2) {
 			prevCollision2 = false;
 		}
+		// if kunai finished passing through wall, set collision boolean to false
 		if (prevCollision1 && !prevCollision2) {
 			prevCollision1 = false;
 			hit = false;
 		}
 	}
 	private void OnTriggerEnter2D(Collider2D other){
+		// set collision boolean to true on impact
 		if (!prevCollision1 && !prevCollision2) {
 			if (other.gameObject.tag == "kunai") {
 				hit = true;
 				prevCollision1 = true;
 			}
+		// if still detecting collision within same wall
 		} else if (prevCollision1) {
 			prevCollision2 = true;
 		}
 	}
+	// public getter for interactions like spinner or switcheroo
 	public bool isHit(){ return hit; }
 }
