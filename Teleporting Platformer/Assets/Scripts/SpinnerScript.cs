@@ -10,6 +10,8 @@ public class SpinnerScript : MonoBehaviour {
 
 	public GameObject[] walls;
 	private GameObject[] blades;
+	public float bladeLength = 5;
+	public float omega = 15;
 
 	// Use this for initialization
 	void Start () {
@@ -23,7 +25,8 @@ public class SpinnerScript : MonoBehaviour {
 			rot = Quaternion.AngleAxis(i*angle,transform.forward);
 			displacement = rot * initial;
 			blade = Instantiate (walls [i], (Vector2)transform.position + displacement, rot);
-			blade.GetComponent<Rigidbody2D> ().angularVelocity = 30;
+			blade.transform.localScale = new Vector2 (bladeLength, 1);
+			blade.GetComponent<Rigidbody2D> ().angularVelocity = omega;
 			blades [i] = blade;
 		}
 	}
@@ -32,7 +35,7 @@ public class SpinnerScript : MonoBehaviour {
 	void Update () {
 		bool hit = false;
 		foreach (GameObject blade in blades) {
-			hit = hit || blade.GetComponent<Walls> ().isHit ();
+			//hit = hit || blade.GetComponent<Walls> ().isHit ();
 		}
 		if (hit && !prevHit) {
 			rotateBlades ();
