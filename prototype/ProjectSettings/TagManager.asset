@@ -4,11 +4,7 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - bounce_back
-  - bounce_light
-  - bounce_fast
-  - bounce_slow
-  - kunai
+  - block
   - wall
   layers:
   - Default
@@ -19,8 +15,8 @@ TagManager:
   - UI
   - 
   - 
-  - Player
-  - Platform
+  - 
+  - 
   - 
   - 
   - 
