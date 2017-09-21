@@ -44,11 +44,11 @@ public class KunaiController : MonoBehaviour {
 				kunaiRB.rotation = 180 - kunaiRB.rotation;
 
 				// bounce horizontally
-				if (other.transform.position.x - transform.position.x <= other.transform.localScale.x / 2) {
+				if (Mathf.Abs(other.transform.position.x - transform.position.x) <= other.transform.localScale.x / 2) {
 					kunaiRB.velocity = new Vector2 (kunaiRB.velocity.x, kunaiRB.velocity.y * -1);
 				}
 			// bounce vertically
-			else if (other.transform.position.y - transform.position.y <= other.transform.localScale.y / 2) {
+				else if (Mathf.Abs(other.transform.position.y - transform.position.y) <= other.transform.localScale.y / 2) {
 					kunaiRB.velocity = new Vector2 (kunaiRB.velocity.x * -1, kunaiRB.velocity.y);
 				}
 		

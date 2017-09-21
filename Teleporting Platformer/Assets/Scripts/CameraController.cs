@@ -12,8 +12,6 @@ public class CameraController : MonoBehaviour {
 	public float minY;
 	public float maxY;
 
-	private Vector3 offset;
-
 	// Use this for initialization
 	void Start () {
 		transform.position = player.transform.position;
@@ -27,7 +25,7 @@ public class CameraController : MonoBehaviour {
 		float y = Mathf.Max(playerPos.y, minY);
 		y = Mathf.Min (y, maxY);
 		transform.position = new Vector3 (x, y, playerPos.z);
-		// print ("(" + x + "," + y + "," + playerPos.z + ")");
+		print ("(" + x + "," + y + "," + playerPos.z + ")");
 		// print ("(" + this.transform.position.x + "," + this.transform.position.y + "," + this.transform.position.z + ")");
 		//transform.position = player.transform.position;
 	}
