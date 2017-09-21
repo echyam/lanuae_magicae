@@ -10,6 +10,7 @@ TagManager:
   - bounce_slow
   - kunai
   - wall
+  - wall_through
   layers:
   - Default
   - TransparentFX
