@@ -16,13 +16,14 @@ public class SpinnerScript : MonoBehaviour {
 		float angle = 360f / walls.Length;
 		blades = new GameObject[walls.Length];
 		Quaternion rot;
-		Vector2 initial = new Vector2 (radius + wallLen/2f, 0);
+		Vector2 initial = new Vector2 (0, 0);
 		Vector2 displacement;
 		GameObject blade;
 		for(int i = 0; i < walls.Length; i++) {
 			rot = Quaternion.AngleAxis(i*angle,transform.forward);
 			displacement = rot * initial;
 			blade = Instantiate (walls [i], (Vector2)transform.position + displacement, rot);
+			blade.GetComponent<Rigidbody2D> ().angularVelocity = 30;
 			blades [i] = blade;
 		}
 	}
