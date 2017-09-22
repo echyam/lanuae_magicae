@@ -15,6 +15,7 @@ public class SwitcherooScript : MonoBehaviour {
 	private Color fastColor = new Color (88f/255f, 146f/255f, 86f/255f, 255f/255f);
 	private Color slowColor = new Color (68f/255f, 149f/255f, 204f/255f, 255/255f);
 
+	public bool timer = false;
 	public GameObject[] wallTypes;
 
 	// Use this for initialization
@@ -23,6 +24,7 @@ public class SwitcherooScript : MonoBehaviour {
 		switcherooCol = GetComponent<Collider2D> ();
 		switcherooSR = GetComponent<SpriteRenderer> ();
 		this.tag = wallTypes[0].tag;
+		StartCoroutine (alternateSwitcherooCoroutine ());
 	}
 
 	// Update is called once per frame
@@ -44,22 +46,31 @@ public class SwitcherooScript : MonoBehaviour {
 			switcherooSR.color = slowColor;
 			break;
 		}
-
-		if (prevCollision1 && prevCollision2) {
-			prevCollision2 = false;
-		}
-		if (prevCollision1 && !prevCollision2) {
-			prevCollision1 = false;
+		if (!timer) {
+			if (prevCollision1 && prevCollision2) {
+				prevCollision2 = false;
+			}
+			if (prevCollision1 && !prevCollision2) {
+				prevCollision1 = false;
+			}
 		}
 	}
 	private void OnTriggerEnter2D(Collider2D other){
-		if (!prevCollision1 && !prevCollision2) {
-			if (other.gameObject.tag == "kunai") {
-				wallTypeInd++;
-				prevCollision1 = true;
+		if (!timer) {
+			if (!prevCollision1 && !prevCollision2) {
+				if (other.gameObject.tag == "kunai") {
+					wallTypeInd++;
+					prevCollision1 = true;
+				}
+			} else if (prevCollision1) {
+				prevCollision2 = true;
 			}
-		} else if (prevCollision1) {
-			prevCollision2 = true;
+		}
+	}
+	IEnumerator alternateSwitcherooCoroutine() {
+		while (timer) {
+			yield return new WaitForSeconds(1f);
+			wallTypeInd++;
 		}
 	}
 }

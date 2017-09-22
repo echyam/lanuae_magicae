@@ -38,21 +38,21 @@ public class KunaiController : MonoBehaviour {
 				transform.rotation *= reverse;
 				kunaiRB.velocity = reverse * kunaiRB.velocity;
 
-				// if kunai should react like light
+			// if kunai should react like light
 			} else if (other.gameObject.tag == "bounce_light") {
 				// flip the kunai in the right direction
 				kunaiRB.rotation = 180 - kunaiRB.rotation;
 
 				// bounce horizontally
-				if (other.transform.position.x - transform.position.x <= other.transform.localScale.x / 2) {
+				if (Mathf.Abs(other.transform.position.x - transform.position.x) <= other.transform.localScale.x / 2) {
 					kunaiRB.velocity = new Vector2 (kunaiRB.velocity.x, kunaiRB.velocity.y * -1);
 				}
-			// bounce vertically
-			else if (other.transform.position.y - transform.position.y <= other.transform.localScale.y / 2) {
+				// bounce vertically
+				else if (Mathf.Abs(other.transform.position.y - transform.position.y) <= other.transform.localScale.y / 2) {
 					kunaiRB.velocity = new Vector2 (kunaiRB.velocity.x * -1, kunaiRB.velocity.y);
 				}
 		
-				// if kunai should bounce back faster
+			// if kunai should bounce back faster
 			} else if (other.gameObject.tag == "bounce_fast") {
 				// double the kunai's speed
 				kunaiRB.velocity = new Vector2 (kunaiRB.velocity.x * Mathf.Pow (2, 0.5f), kunaiRB.velocity.y * Mathf.Pow (2, 0.5f));
