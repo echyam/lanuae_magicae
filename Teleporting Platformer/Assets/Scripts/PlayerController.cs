@@ -54,14 +54,18 @@ public class PlayerController : MonoBehaviour {
 			}
 		}
 
-		//[WALL MOVEMENT] If touching a wall, the act of pressing the horizontal button in the direction of the wall should limit downard velocity to no more than slideSpeed as though clining to the wall. 
+		//[WALL MOVEMENT] If touching a wall, the act of pressing the horizontal button in the direction of the wall should limit downard velocity to no more than slideSpeed as though clinging to the wall. 
 		//When space is pressed, set horizontal and vertical velocity such that speed is wallJumpSpeed and direction is wallJumpAngle above horizontal line as though kicking of the wall to jump.
-		if(isWalledL){
-			if(Input.GetAxis("Horizontal")==-1){
+		if (isWalledL) {
+			if (Input.GetAxis ("Horizontal") == -1) {
 				resultVelo.y += -9.81f * Time.deltaTime;
-				resultVelo.y = Mathf.Max (resultVelo.y,slideSpeed);
+				resultVelo.y = Mathf.Max (resultVelo.y, slideSpeed);
 
 			}
+			//To possibly add back in later; let's player wall sliding move away from wall instantly rather than accelerate away
+/*			if(Input.GetAxis("Horizontal")==		1){
+				resultVelo.x = walkSpeed;
+			}*/
 			if(Input.GetKeyDown("space")&&!isGrounded){
 				resultVelo.x = wallJumpHeight * Mathf.Cos (wallJumpAngle*Mathf.PI);
 				resultVelo.y = wallJumpHeight * Mathf.Sin (wallJumpAngle*Mathf.PI);
@@ -73,6 +77,10 @@ public class PlayerController : MonoBehaviour {
 				resultVelo.y += -9.81f * Time.deltaTime;
 				resultVelo.y = Mathf.Max (resultVelo.y,slideSpeed);
 			}
+			//Same as above but for other wall
+/*			if(Input.GetAxis("Horizontal")==-1){
+				resultVelo.x = walkSpeed*-1;
+			}*/
 			if(Input.GetKeyDown("space")&&!isGrounded){
 				resultVelo.x = wallJumpHeight * -1.0f * Mathf.Cos (wallJumpAngle*Mathf.PI);
 				resultVelo.y = wallJumpHeight * Mathf.Sin (wallJumpAngle*Mathf.PI);
