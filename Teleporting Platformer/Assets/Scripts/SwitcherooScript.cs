@@ -79,6 +79,7 @@ public class SwitcherooScript : MonoBehaviour {
 			}
 		}
 	}
+
 	// timed coroutine for cycling through interactions
 	IEnumerator alternateSwitcherooCoroutine() {
 		while (timer) {
