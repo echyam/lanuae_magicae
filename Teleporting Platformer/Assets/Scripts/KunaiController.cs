@@ -18,6 +18,8 @@ public class KunaiController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		//transform.position += speed * transform.right * Time.deltaTime;
+
+		// track kunai collisions through walls
 		if (prevCollision1 && prevCollision2) {
 			prevCollision2 = false;
 		}
@@ -27,12 +29,15 @@ public class KunaiController : MonoBehaviour {
 	}
 
 	private void OnTriggerEnter2D(Collider2D other){
+		
+		// if entering/colliding with wall
 		if (!prevCollision1 && !prevCollision2) {
+			
 			// if kunai should stick
 			if (other.gameObject.tag == "wall") {
 				kunaiRB.velocity = Vector2.zero;
 
-				// if kunai should completely reverse direction
+			// if kunai should completely reverse direction
 			} else if (other.gameObject.tag == "bounce_back") {
 				Quaternion reverse = Quaternion.AngleAxis (180, transform.forward);
 				transform.rotation *= reverse;
@@ -40,28 +45,30 @@ public class KunaiController : MonoBehaviour {
 
 			// if kunai should react like light
 			} else if (other.gameObject.tag == "bounce_light") {
-				// flip the kunai in the right direction
+				// flip the kunai in the right orientation
 				kunaiRB.rotation = 180 - kunaiRB.rotation;
 
-				// bounce horizontally
+				// refract horizontally
 				if (Mathf.Abs(other.transform.position.x - transform.position.x) <= other.transform.localScale.x / 2) {
 					kunaiRB.velocity = new Vector2 (kunaiRB.velocity.x, kunaiRB.velocity.y * -1);
 				}
-				// bounce vertically
+				// refract vertically
 				else if (Mathf.Abs(other.transform.position.y - transform.position.y) <= other.transform.localScale.y / 2) {
 					kunaiRB.velocity = new Vector2 (kunaiRB.velocity.x * -1, kunaiRB.velocity.y);
 				}
 		
-			// if kunai should bounce back faster
+			// if kunai should speed up
 			} else if (other.gameObject.tag == "bounce_fast") {
 				// double the kunai's speed
 				kunaiRB.velocity = new Vector2 (kunaiRB.velocity.x * Mathf.Pow (2, 0.5f), kunaiRB.velocity.y * Mathf.Pow (2, 0.5f));
 		
-				// if kunai should bounce back slower
+			// if kunai should slow down
 			} else if (other.gameObject.tag == "bounce_slow") {
 				// half the kunai's speed
 				kunaiRB.velocity = new Vector2 (kunaiRB.velocity.x * Mathf.Pow (2, -0.5f), kunaiRB.velocity.y * Mathf.Pow (2, -0.5f));
 			}
+
+		// tracking collisions
 		} else if (prevCollision1) {
 			prevCollision2 = true;
 		}
