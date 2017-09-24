@@ -13,6 +13,7 @@ public class SpinnerScript : MonoBehaviour {
 
 	// array of wall prefabs to be spun as windmill blades
 	private GameObject[] blades;
+
 	// length of windmill blades
 	public float bladeLength = 5;
 	// angular velocity of blades
