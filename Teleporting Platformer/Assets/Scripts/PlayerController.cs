@@ -17,9 +17,11 @@ public class PlayerController : MonoBehaviour {
 	private bool isWalledL;
 	private bool isWalledR;
 
+	private Vector3 respawn;
 	// Use this for initialization
 	void Start () {
 		myBody = GetComponent<Rigidbody2D> ();
+		respawn = transform.position;
 	}
 	
 	// Update is called once per frame
@@ -88,6 +90,10 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		myBody.velocity = resultVelo;
+	}
+
+	public void kill(){
+		transform.position = respawn;
 	}
 
 	//Coroutines I thought I needed at a time put now it seems I don't I'll likely delete them later but for now holding on just to be sure
