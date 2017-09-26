@@ -69,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1182296192376722}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.636409, y: -0.8784431, z: 0}
+  m_LocalPosition: {x: -9.9, y: -5.02, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4783284613134596}
@@ -149,13 +149,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d73b1e94853ccb84fba36ade759bf46d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  walkSpeed: 3.45
-  jumpHeight: 5.5
-  airAccel: 9
-  airSpeedLimit: 6.5
-  slideSpeed: -2
-  wallJumpHeight: 7
-  wallJumpAngle: 0.35
+  walkSpeed: 5
+  jumpHeight: 6
+  airAccel: 10
+  airSpeedLimit: 7
+  slideSpeed: -1
+  wallJumpHeight: 6
+  wallJumpAngle: 0.17
 --- !u!114 &114801721317494314
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -201,7 +201,7 @@ SpriteRenderer:
   m_SortingLayerID: 1504906735
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1adc14c2da158ff4baa9fdd1109a76f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5ec65465cf8e0c744bee6a0f1e093314, type: 3}
   m_Color: {r: 0.94472617, g: 0.99264705, b: 0.49632353, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -243,7 +243,7 @@ SpriteRenderer:
   m_SortingLayerID: 1504906735
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 1adc14c2da158ff4baa9fdd1109a76f7, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 5ec65465cf8e0c744bee6a0f1e093314, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
