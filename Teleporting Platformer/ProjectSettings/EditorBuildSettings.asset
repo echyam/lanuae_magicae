@@ -29,3 +29,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: 25bc854bb268a64488c69eee70c4b95b
+  - enabled: 1
+    path: Assets/Scenes/Mike Test Room.unity
+    guid: 965c58c26eb51ca4eaaf11e332a9b34a
