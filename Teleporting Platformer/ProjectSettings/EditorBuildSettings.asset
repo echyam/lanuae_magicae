@@ -5,24 +5,27 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
+  - enabled: 0
+    path: 
+    guid: 899c63b31f976c1479c0500b392b011c
+  - enabled: 0
+    path: 
+    guid: 8258e8faee9d5434581c89b7ce833077
+  - enabled: 0
+    path: 
+    guid: c35741392f01b5d4b9636991fab6aa44
+  - enabled: 0
+    path: 
+    guid: 15290d4921417634c80dff6eb348220b
+  - enabled: 0
+    path: 
+    guid: 09e2b758d3b8e8849bbfdd133e0dc0e5
+  - enabled: 0
+    path: 
+    guid: 8c1f4777924574d45906f3c5e22ce61d
+  - enabled: 0
+    path: 
+    guid: 6fd6a608adcde1449a77434a76438194
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
-    guid: 899c63b31f976c1479c0500b392b011c
-  - enabled: 1
-    path: Assets/Scenes/Mike Test Room.unity
-    guid: 8258e8faee9d5434581c89b7ce833077
-  - enabled: 1
-    path: Assets/Scenes/sample_levels/Liz sample lvl0.unity
-    guid: c35741392f01b5d4b9636991fab6aa44
-  - enabled: 1
-    path: Assets/Scenes/Liz scene test walls.unity
-    guid: 15290d4921417634c80dff6eb348220b
-  - enabled: 1
-    path: Assets/Scenes/sample_levels/Liz sample lvl1.unity
-    guid: 09e2b758d3b8e8849bbfdd133e0dc0e5
-  - enabled: 1
-    path: Assets/Scenes/sample_levels/Liz sample lvl2.unity
-    guid: 8c1f4777924574d45906f3c5e22ce61d
-  - enabled: 1
-    path: Assets/Scenes/sample_levels/Liz sample lvl3.unity
-    guid: 6fd6a608adcde1449a77434a76438194
+    guid: 25bc854bb268a64488c69eee70c4b95b
