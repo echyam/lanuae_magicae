@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour {
 		//[WALL MOVEMENT] If touching a wall, the act of pressing the horizontal button in the direction of the wall should limit downard velocity to no more than slideSpeed as though clinging to the wall. 
 		//When space is pressed, set horizontal and vertical velocity such that speed is wallJumpSpeed and direction is wallJumpAngle above horizontal line as though kicking of the wall to jump.
 		if (isWalledL) {
-			if (Input.GetAxis ("Horizontal") == -1) {
+			if (Input.GetAxis ("Horizontal") != 0) {
 				resultVelo.y += -9.81f * Time.deltaTime;
 				resultVelo.y = Mathf.Max (resultVelo.y, slideSpeed);
 
@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if(isWalledR){
-			if(Input.GetAxis("Horizontal")==1){
+			if(Input.GetAxis("Horizontal")!=0){
 				resultVelo.y += -9.81f * Time.deltaTime;
 				resultVelo.y = Mathf.Max (resultVelo.y,slideSpeed);
 			}
