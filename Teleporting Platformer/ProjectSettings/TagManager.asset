@@ -11,6 +11,7 @@ TagManager:
   - kunai
   - wall
   - wall_through
+  - goal
   layers:
   - Default
   - TransparentFX
