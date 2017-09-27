@@ -28,7 +28,7 @@ public class CameraController : MonoBehaviour {
 		x = Mathf.Min (x, maxX);
 		y = Mathf.Min (y, maxY);
 
-		transform.position = new Vector3 (x, y, playerPos.z);
+		transform.position = new Vector3 (x, y, -10);
 		print ("(" + x + "," + y + "," + playerPos.z + ")");	// track updated camera coordinates
 	}
 }
