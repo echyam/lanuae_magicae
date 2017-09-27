@@ -20,6 +20,8 @@ public class ButtonManager : MonoBehaviour {
 		} else if (gameObject.name == "QuitButton") {
 			Debug.Log ("Quit Button");
 			Quit ();
+		} else if (gameObject.name == "BackButton") {
+			LoadByIndex (0);
 		}
 	}
 	void LoadByIndex(int sceneIndex){
