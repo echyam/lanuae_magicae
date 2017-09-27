@@ -31,15 +31,15 @@ public class PlayerController : MonoBehaviour {
 		isWalledL = false;
 		isWalledR = false;
 		RaycastHit2D groundedCheck = Physics2D.Raycast (transform.position,transform.up*-1.0f,0.53f);
-		if(groundedCheck.collider!=null&&groundedCheck.collider.tag!="Switch"){
+		if(groundedCheck.collider!=null){
 			isGrounded=true;
 		}
 		RaycastHit2D walledLCheck = Physics2D.Raycast (transform.position,transform.right*-1.0f,0.53f);
-		if(walledLCheck.collider!=null&&walledLCheck.collider.tag!="Switch"){
+		if(walledLCheck.collider!=null){
 			isWalledL=true;
 		}
 		RaycastHit2D walledRCheck = Physics2D.Raycast (transform.position,transform.right,0.53f);
-		if(walledRCheck.collider!=null&&walledRCheck.collider.tag!="Switch"){
+		if(walledRCheck.collider!=null){
 			isWalledR=true;
 		}
 
@@ -59,7 +59,7 @@ public class PlayerController : MonoBehaviour {
 		//[WALL MOVEMENT] If touching a wall, the act of pressing the horizontal button in the direction of the wall should limit downard velocity to no more than slideSpeed as though clinging to the wall. 
 		//When space is pressed, set horizontal and vertical velocity such that speed is wallJumpSpeed and direction is wallJumpAngle above horizontal line as though kicking of the wall to jump.
 		if (isWalledL) {
-			if (Input.GetAxis ("Horizontal") < 0) {
+			if (Input.GetAxis ("Horizontal") != 0) {
 				resultVelo.y += -9.81f * Time.deltaTime;
 				resultVelo.y = Mathf.Max (resultVelo.y, slideSpeed);
 
@@ -75,7 +75,7 @@ public class PlayerController : MonoBehaviour {
 		}
 
 		if(isWalledR){
-			if(Input.GetAxis("Horizontal")> 0){
+			if(Input.GetAxis("Horizontal")!=0){
 				resultVelo.y += -9.81f * Time.deltaTime;
 				resultVelo.y = Mathf.Max (resultVelo.y,slideSpeed);
 			}
